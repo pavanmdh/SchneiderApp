@@ -1,0 +1,28 @@
+<!-- <div id="group-details" class="col-md-4">
+    <div *ngIf="items.length == 0">Please select group to view details</div>
+    <div class="flex-container">
+        <div class="detail-container" *ngFor = "let item of items">
+            <a href="#" class="thumbnail">
+                <img src="assets/Images/Square_200x200.png" alt="loading">
+              </a>
+          </div>
+    </div>
+</div> -->
+
+<div id="group-details" class="col-md-3">
+    <div class="panel panel-default">
+        <div class="panel-heading">Parts</div>
+        <div *ngIf="items.length == 0">Please select group to view details</div>
+        <div class="flex-container">
+            <div class="detail-container" *ngFor = "let item of items">
+                <div  cdkDrag>
+                    <img src = "assets/Images/{{item}}.png" alt="loading" height="100px" width="100px">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel panel-default" id="assembly-details">
+    <div class="panel-heading">Assembly</div>
+</div>

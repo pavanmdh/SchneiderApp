@@ -1,0 +1,38 @@
+<nav class="navbar navbar-inverse" style="background-color: #349630">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="/app/home"><img src="../../assets/Images/logo.png" alt="schneider" width="50px"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active"><a routerLink = "/app/home">HOME</a></li>
+        <li routerLinkActive="active"><a routerLink = "/app/configuration">CONFIGURATION</a></li>
+        <li routerLinkActive="active"><a routerLink = "/app/slpview">SLP VIEW</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" routerLinkActive="active">DOCUMENTS
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a routerLinkActive="active" routerLink = "/app/documents-bom">BOM</a></li>
+            <li><a routerLinkActive="active" routerLink = "/app/documents-communication">COMMUNICATION</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" routerLinkActive="active">ABOUT
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a routerLinkActive="active" routerLink = "/app/about-help">HELP</a></li>
+            <li><a routerLinkActive="active" routerLink = "/app/about-view">VIEW</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink = "/"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

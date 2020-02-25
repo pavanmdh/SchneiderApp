@@ -1,0 +1,23 @@
+<!-- <div id="product-list" class="col-md-3">
+    <div *ngIf="lists.length == 0">Please select Application to view Product details</div>
+    <div (click)="check($event)">
+        <div class="deck" *ngFor="let list of lists;let i = index" [attr.data-index]="i" 
+        [ngClass]="{'deck-active': selectedProductList == i}" >
+            <span class="badge badge-align" [attr.data-index]="i">{{list}}</span>
+        </div>
+    </div>     
+</div> -->
+
+
+<div class="col-md-2">
+    <div class="panel panel-default">
+      <div class="panel-heading">Product List</div>
+      <div *ngIf="lists.length == 0">Please select Application to view Product details</div>
+      <div class="panel-body" (click)="check($event)">
+        <ul class="list-group">
+          <li class="list-group-item" *ngFor="let list of lists;let i = index" [attr.data-index]="i" 
+          [ngClass]="{'active': selectedProductList == i}">{{list}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>

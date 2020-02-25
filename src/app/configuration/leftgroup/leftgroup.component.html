@@ -1,0 +1,37 @@
+<!-- <div id="left-group" class="col-md-3">
+    <div (click)="check($event)">
+
+        <div class="deck" [ngClass]="{'deck-active': selectedGroupId == '1'}">
+            <span class="badge badge-align">Interlock MV/LV</span>
+        </div>
+    
+        <div class="deck" [ngClass]="{'deck-active': selectedGroupId == '2'}">
+            <span class="badge badge-align">ZSI</span>
+        </div>
+
+        <div class="deck" [ngClass]="{'deck-active': selectedGroupId == '3'}">
+            <span class="badge badge-align">Load Schedule</span>
+        </div>
+
+        <div class="deck" [ngClass]="{'deck-active': selectedGroupId == '4'}">
+            <span class="badge badge-align">ATS</span>
+        </div>
+
+    </div>
+
+      
+</div> -->
+
+<div class="col-md-2">
+    <div class="panel panel-default">
+      <div class="panel-heading">Application</div>
+      <div class="panel-body" (click)="check($event)">
+        <ul class="list-group">
+          <li class="list-group-item" [ngClass]="{'active': selectedGroupId == '1'}">Interlock MV/LV</li>
+          <li class="list-group-item" [ngClass]="{'active': selectedGroupId == '2'}">ZSI</li>
+          <li class="list-group-item" [ngClass]="{'active': selectedGroupId == '3'}">Load Schedule</li>
+          <li class="list-group-item" [ngClass]="{'active': selectedGroupId == '4'}">ATS</li>
+        </ul>
+      </div>
+    </div>
+  </div>
