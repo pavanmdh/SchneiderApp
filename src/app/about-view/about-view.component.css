@@ -1,0 +1,16 @@
+.container {
+    position: relative;
+    text-align: center;
+    background-color: white;
+  }
+  .lead{
+    text-align: justify; 
+    font-size: medium; 
+    color: darkslategray;
+  }
+  .container-fluid {
+    background-color: white;
+    margin-left: 170px;
+    margin-right: 170px;
+    margin-top: 20px;
+}
